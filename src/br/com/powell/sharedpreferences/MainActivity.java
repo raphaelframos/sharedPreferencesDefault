@@ -1,23 +1,19 @@
 package br.com.powell.sharedpreferences;
 
 import android.os.Bundle;
-import android.app.Activity;
-import android.view.Menu;
+import android.preference.CheckBoxPreference;
+import android.preference.EditTextPreference;
+import android.preference.PreferenceActivity;
 
-public class MainActivity extends Activity {
+public class MainActivity extends PreferenceActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        addPreferencesFromResource(R.xml.configuracoes);
+        
+        CheckBoxPreference checkPreference = (CheckBoxPreference) findPreference(getString(R.string.ligado_key));
+        EditTextPreference editPreference = (EditTextPreference) findPreference(getString(R.string.nome_key));
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-    
 }

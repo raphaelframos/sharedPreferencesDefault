@@ -4,5 +4,12 @@
     <string name="app_name">SharedPreferences</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="geral">Geral</string>
+    <string name="ligado_key">LigadoKey</string>
+    <string name="ligado">Ligado</string>
+    <string name="ligar_alguma_coisa">Ligar alguma coisa</string>
+    <string name="nome_key">NomeKey</string>
+    <string name="nome">nome</string>
+    <string name="alguma_coisa">Alguma coisa aqui</string>
 
 </resources>

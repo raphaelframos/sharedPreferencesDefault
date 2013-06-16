@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:title="@string/geral">
+        <CheckBoxPreference android:key="@string/ligado_key"
+                android:title="@string/ligado"
+                android:summary="@string/ligar_alguma_coisa"
+                android:defaultValue="true" />
+        <EditTextPreference android:key="@string/nome_key"
+                android:title="@string/nome"
+                android:summary="@string/alguma_coisa"/>
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:title="@string/alguma_coisa">
+        
+    </PreferenceCategory>
+    
+
+</PreferenceScreen>
